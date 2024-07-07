@@ -1,0 +1,45 @@
+/*PRIMERO ARREGLOS BASICOS*/
+
+img {
+  width: 100%;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  margin: 5px auto;
+}
+li {
+  list-style-type: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+article {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 3px;
+}

@@ -1,0 +1,35 @@
+:root{
+    --primary: #0a2ff1;
+    --varprimary: #04146c;
+    --secundary: #3ffff3;
+    --gris1: #15163D;
+    --gris2: #414166;
+    --gris3: #71718D;
+    --gris4: #9797AE;
+    --gris5: #c5c5cd;
+    --gris6: #EEEEEE;
+    --gris7: #f8f9f8;
+    --varprimary1: #3957f1;
+    --varprimary2: #5974ff;
+    --varprimary3: #8a9af1;
+    --varprimary4: #c9d1ff;
+    --varprimary5: #eff2ff;
+    --varprimary6: #edf7ff;
+}
+
+h2,h3,p, a{
+    color: var(--gris1);
+}
+article{
+    background-color: var(--varprimary5);
+}
+body{
+    background-color: var(--gris7);
+}
+
+footer{
+    background-color: var(--gris1);
+}
+footer>h3, footer>p, footer>a{
+    color: var(--gris7);
+}
