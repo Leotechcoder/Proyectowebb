@@ -33,3 +33,6 @@ footer{
 footer>h3, footer>p, footer>a{
     color: var(--gris7);
 }
+.nav-bar{
+    background-color: var(--varprimary4);    
+}

@@ -11,13 +11,16 @@
   <body>
     <header>
       <img src="imagenes/AD.png" alt="logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Testimonios</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
+      <section class="nav-bar-container">
+        <button id="nav-bar" class="nav-bar">&equiv;</button>
+        <nav id="nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
     <main>
@@ -30,7 +33,7 @@
         <img src="imagenes/img1.png" alt="" />
       </section>
 
-      <section>
+      <section class="section">
         <h2>diseño de marca e imagen</h2>
         <p class="paragraf">
           comunmente utilizado en la industria grafica, de impresion y
@@ -39,7 +42,7 @@
         <img src="imagenes/img2.png" alt="" />
       </section>
 
-      <section>
+      <section class="section">
         <h2>Desarrollo de marca</h2>
         <p class="paragraf">
           comunmente utilizado en la industria grafica, de impresion y
@@ -48,14 +51,14 @@
         <img src="imagenes/img3.png" alt="" />
       </section>
 
-      <section>
+      <section class="section">
         <p>Testimonios</p>
         <h2>Nuestros clientes hablan</h2>
       </section>
 
-      <section>
+      <section class="section">
         <article>
-            <img src= "imagenes/retrato1.jpg" alt="retrato">
+          <img src="imagenes/retrato1.jpg" alt="retrato" />
           <h3>Andres Garcia</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
@@ -65,7 +68,7 @@
           </p>
         </article>
         <article>
-            <img src="imagenes/retrato2.jpg" alt="retrato">
+          <img src="imagenes/retrato2.jpg" alt="retrato" />
           <h3>Vera Rodriguez</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
@@ -75,7 +78,7 @@
           </p>
         </article>
         <article>
-            <img src="imagenes/retrato3.jpg" alt="retrato">
+          <img src="imagenes/retrato3.jpg" alt="retrato" />
           <h3>Maria Sanchez</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
@@ -97,5 +100,14 @@
       <a href="#">Twitter</a>
       <p>2024Todos los derechos reservados</p>
     </footer>
+
+    <script>
+      const btn = document.getElementById("nav-bar");
+      const nav = document.getElementById("nav");
+
+      btn.addEventListener("click", () => {
+        nav.style.display = nav.style.display === "none" ? "block" : "none";
+      });
+    </script>
   </body>
 </html>
