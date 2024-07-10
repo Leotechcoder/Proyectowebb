@@ -21,7 +21,7 @@ h2,h3,p, a{
     color: var(--gris1);
 }
 article{
-    background-color: var(--varprimary5);
+    background-color: var(--varprimary4);
 }
 body{
     background-color: var(--gris7);
@@ -32,4 +32,7 @@ footer{
 }
 footer>h3, footer>p, footer>a{
     color: var(--gris7);
+}
+.nav-bar{
+    background-color: var(--varprimary4);    
 }
