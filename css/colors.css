@@ -27,12 +27,20 @@ body{
     background-color: var(--gris7);
 }
 
+.nav-bar{
+    background-color: var(--varprimary4);    
+}
+
+.buttonc{
+    background-color: var(--gris1);
+}
+.buttonc>a{    
+    color: var(--varprimary4);
+}
+
 footer{
     background-color: var(--gris1);
 }
-footer>h3, footer>p, footer>a{
+.contfooter>h3,.contfooter>p, .contfooter>a{
     color: var(--gris7);
-}
-.nav-bar{
-    background-color: var(--varprimary4);    
 }
