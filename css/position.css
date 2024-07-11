@@ -31,13 +31,25 @@ header{
   position: relative;
 }
 
+.nav-bar {
+  width: 9vw;
+  height: 6vh;
+  border-radius: 5px;
+  border: 2px solid var(--gris3);
+  font-size: 1.4rem;
+  color: var(--gris2);
+  cursor: pointer;
+  margin-bottom: 1vh;
+  margin-right: 2vw;
+}
+
 nav{
-  min-width: 25vw;
+  min-width: 30vw;
   display: none;
   background-color: var(--varprimary3);
   position: absolute;
-  right: 15px;
-  top: 33px;
+  right: 2vw;
+  top: 7vh;
 }
 
 a {
@@ -55,17 +67,6 @@ li :hover{
   color: var(--varprimary4);
 }
 
-.nav-bar {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  border: 2px solid var(--gris3);
-  font-size: 1.4rem;
-  color: var(--gris2);
-  cursor: pointer;
-  margin-bottom: 15px;
-  margin-right: 15px;
-}
 
 .section {
   padding-top: 25px;
