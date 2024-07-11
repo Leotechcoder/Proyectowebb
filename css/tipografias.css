@@ -34,3 +34,6 @@ footer>a{
     font-variation-settings: 'wght' 300;
 }
 
+li>a{
+    font-size: 1.2rem;
+}
