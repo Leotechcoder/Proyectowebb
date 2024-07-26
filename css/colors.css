@@ -17,7 +17,7 @@
     --varprimary6: #edf7ff;
 }
 
-h2,h3,p, a{
+h2,h4,p, a{
     color: var(--gris1);
 }
 article{
@@ -41,6 +41,6 @@ body{
 footer{
     background-color: var(--gris1);
 }
-.contfooter>h3,.contfooter>p, .contfooter>a{
+.contfooter>h4,.contfooter>p, .contfooter>a{
     color: var(--gris7);
 }

@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*BODY*/
+body{
+  background-image: radial-gradient(circle at top left, #0a2ff1 1%, #f8f6f6bb 20%);
+}
+
+/*HEADER*/
 
 header{
     width: 100%;
@@ -15,37 +21,42 @@ header{
 }
 
 .logo{
-  width: 20vw;
+  min-width: 80px;
   position: absolute;
-  top: 20px;
-  left: 12px;
+  top: clamp(1rem, 25px, 3rem);
+  left: clamp(1rem, 20px, 3rem);
 }
 
 .nav-bar-container{
   padding: 0;
+  height: 80%;
   position: relative;
+  min-width: 20vw;
+  max-width: 40vw;
 }
 
 .nav-bar {
-  width: 9vw;
-  height: 6vh;
   border-radius: 5px;
   border: 2px solid var(--gris3);
   font-size: 1.4rem;
   color: var(--gris2);
   cursor: pointer;
-  margin-bottom: 15px;
-  margin-right: 15px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  min-width: 40px;
 }
 
 nav{
-  min-width: 30vw;
+  border-radius: 14px;
+  min-width: 100px;
   display: none;
   background-color: var(--varprimary3);
   position: absolute;
   right: 15px;
-  top: 38px;
+  top: 55px;
   padding: 3px;
+  box-shadow: 1px 1px 10px #cccccc;
 }
 
 a {
@@ -61,7 +72,10 @@ li {
 li :hover{
   background-color: var(--varprimary);
   color: var(--varprimary4);
+  border-radius: 10px;
 }
+
+/*MAIN*/
 
 .section1{
   margin-bottom: 15px;
@@ -78,74 +92,77 @@ li :hover{
   margin: 20px auto;
 }
 
-h2, img, h3 {
-  padding-bottom: 20px;
+h2, img {
+  padding-bottom: 10px;
   padding-left: 5px;
   padding-right: 10px;
 }
 
-p{
-  margin-bottom: 10px;
-  padding-bottom: 8px;
-  padding-right: 10px;
+/*SECTION 4: ARTICULOS*/
+
+.articulos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
 
-h3{
-  padding-top: 10px;
+article>p{
+  padding: 5px 3px;
 }
+
+article>h4{
+  margin: 7px 0px;
+}
+.section4{
+  width: 100%;
+}
+
 
 article {
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 5px;
+  max-width: 280px;
+  margin: 0px auto;
+  padding: 10px 5px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-article>p {
-  text-align: left;
-  padding-left: 15px;
-}
-
-.imgart1{
-  width: 50%;
-  height: 25vh;
-  margin-top: 15px;
-  background-image: url("/imagenes/retrato1.jpg");
-  background-size: cover;
+.imgart1, .imgart2, .imgart3{  
+  min-width: 100px;
+  min-height: 100px;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
+.imgart1{background-image: url("/imagenes/Andres.png");}
+.imgart2{background-image: url("/imagenes/Vera.png"); }
+.imgart3{background-image: url("/imagenes/Maria\ Sanchez.png");}
 
-.imgart2{
-  width: 50%;
-  height: 25vh;
-  margin-top: 15px;
-  background-image: url("/imagenes/retrato2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+/*FOOTER*/
+
+.contfooter>h4{
+  padding-top: 20px;
 }
 
-.imgart3{
-  width: 50%;
-  height: 25vh;
-  margin-top: 15px;
-  background-image: url("/imagenes/retrato3.jpg");
-  background-size: cover;
-  background-position: top ;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+.contfooter>p{
+  padding-top: 15px;  
+  padding-bottom: 8px;
+  padding-right: 10px;
 }
 
-.contfooter{
-  margin-top: 10px ;
+footer{
+  padding-bottom: 8px;
 }
 
+.grid21{
+  padding-top: 8px;
+}
 .contfooter>a{
   text-align: center;
+  padding-top: 8px;
 }
+
+
